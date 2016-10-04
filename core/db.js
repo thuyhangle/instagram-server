@@ -1,4 +1,4 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/instagram-test');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/instagram-test');
 
 module.exports = mongoose;
